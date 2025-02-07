@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My IT Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+                /* General Body Styles */
+          body {
+              background-color: #F5F5F5;
+              color: #333333;
+              font-family: 'Arial', sans-serif;
+          }
+
+          /* Navbar */
+          .navbar {
+              background-color: #20232A !important;
+          }
+          .navbar-brand, .nav-link {
+              color: #FFFFFF !important;
+          }
+          .nav-link:hover {
+              color: #FF9800 !important;
+          }
+
+          /* Section Titles */
+          h2 {
+              color: #008080;
+              font-weight: bold;
+              border-bottom: 3px solid #FF9800;
+              display: inline-block;
+              padding-bottom: 5px;
+          }
+
+          /* Cards */
+          .card {
+              background-color: #FFFFFF;
+              border: 1px solid #CCCCCC;
+              transition: transform 0.3s ease-in-out;
+          }
+          .card:hover {
+              transform: scale(1.03);
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          }
+          /* Contact Card Hover Effect */
+.cards:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+          /* Buttons */
+          .btn-primary {
+              background-color: #008080;
+              border: none;
+          }
+          .btn-primary:hover {
+              background-color: #006666;
+          }
+
+          /* Skills Badges */
+          .badge.bg-primary {
+              background-color: #008080 !important;
+          }
+          .badge.bg-secondary {
+              background-color: #FF9800 !important;
+          }
+
+          /* Modal */
+          .modal-content {
+              background-color: #FFFFFF;
+              border-radius: 10px;
+          }
+          .modal-header {
+              background-color: #008080;
+              color: #FFFFFF;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+          }
+
+        .profile-img {
+            max-width: 100%;
+            height: 500px;
+        }
+        .certificate-img {
+            width: 150px; /* Small size */
+            height: auto;
+            cursor: pointer; /* Indicate clickable */
+            display: block;
+            margin: 10px auto;
+        }
+        .project-img {
+          width: 150px; /* Small size */
+            height: auto;
+            cursor: pointer; /* Indicate clickable */
+            display: block;
+            margin: 10px auto;
+        }
+        .modal-img {
+            max-width: 100%;
+            height: auto;
+        }
+        h2 {
+          padding-top:30px;
+        }
+        .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.8); /* White border */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+#contact h2 {
+    text-align: left !important;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-img {
+        display: block;
+        margin: 0 auto; /* Centers the image */
+        position: static; /* Remove relative positioning */
+        width: 80%; /* Adjust width for responsiveness */
+        max-width: 250px; /* Set a reasonable max width */
+    }
+
+    /* Center the column */
+    .col-md-4 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- About Section -->
+<section id="about" class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="logo.jpg" class="img-fluid rounded-circle profile-img" alt="Your Photo">
+        </div>
+        <div class="col-md-8">
+            <h2>About Me</h2>
+            <p>
+                I am <strong>Jayson Yuson</strong> an IT graduate with a strong foundation in both web development and database management. 
+                Proficient in HTML, CSS, JavaScript, and PHP, I enjoy creating responsive and visually appealing web applications. 
+                My soft skills, including teamwork, problem-solving, adaptability, and critical thinking, enable me to collaborate 
+                effectively and navigate challenges efficiently.
+                <br><br>
+                I am eager to apply my skills in dynamic companies where I can contribute to innovative projects and continue learning. 
+                My goal is to develop my expertise further and make a significant impact in the IT industry.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+ <!-- Educational Background Section -->
+ <section id="education" class="container mt-5">
+  <h2>Educational Background</h2>
+  <div class="card mb-3">
+      <div class="row g-0">
+          <div class="col-md-2">
+              <img src="ctu.png" class="img-fluid ctu-logo" alt="CTU Logo">
+          </div>
+          <div class="col-md-10">
+              <div class="card-body">
+                  <h5 class="card-title">Cebu Technological University</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Daanbantayan Campus</h6>
+                  <p class="card-text">Graduated with a degree in Information Technology.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mt-5">
+        <h2>Skills</h2>
+        <br><br><br>
+        <div class="row">
+            <div class="col-md-6" style="padding-bottom:20px;">
+                <h4>Soft Skills</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item badge bg-secondary">Teamwork</li>
+                    <li class="list-inline-item badge bg-secondary">Problem-Solving</li>
+                    <li class="list-inline-item badge bg-secondary">Adaptability</li>
+                    <li class="list-inline-item badge bg-secondary">Critical Thinking</li>
+                </ul>
+            </div>
+            <br><br>
+            <div class="col-md-6">
+                <h4 >Hard Skills</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item badge bg-primary">HTML</li>
+                    <li class="list-inline-item badge bg-primary">CSS</li>
+                    <li class="list-inline-item badge bg-primary">JavaScript</li>
+                    <li class="list-inline-item badge bg-primary">SQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Certificates Section -->
+<section id="certificates" class="container mt-5">
+  <h2>Certificates</h2>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card text-center">
+              <div class="card-body">
+                  <h5 class="card-title">Certificate of Completion</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Programming Hero - 2025</h6>
+                  <p class="card-text">Awarded for successfully completing the Python Course 2023.</p>
+                  <img src="certificate.jpg" class="certificate-img" alt="Certificate of Completion" onclick="openModal(this)">
+              </div>
+          </div>
+      </div>
+      <!-- Add more certificates as needed -->
+       
+  </div>
+</section>
+
+
+<!-- Certificates Section -->
+<section id="projects" class="container mt-5">
+  <h2>Projects</h2>
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card text-center">
+              <div class="card-body">
+                  <h5 class="card-title" style="font-weight: bold;">End Time Message</h5>
+                  <p class="card-text">
+                    This project is designed to reveal all the hidden mysteries to the bride in this 
+                    last days. It takes a creative approach to unveiling messages in a meaningful way.
+                </p>
+                  <img src="project1.png" class="certificate-img" alt="Certificate of Completion">
+                  <br><br>
+                  <a href="https://jordanyuson120.github.io/End-Time-Message/home.html" target="_blank" class="btn btn-primary">View Project</a>        
+                </div>
+          </div>
+      </div>
+      <!-- Add more certificates as needed -->
+       
+  </div>
+</section>
+
+
+
+
+<section id="contact" class="container mt-5">
+    <h2 class="text-start">Contact</h2>
+    <div class="row">
+        <!-- Contact Number -->
+        <div class="col-md-4 mb-3 text-center">
+            <div class="card p-3 shadow-sm">
+                <i class="bi bi-telephone-fill fs-2 text-primary"></i>
+                <h6 class="mt-2">Phone</h6>
+                <p class="mb-0">+63 908 455 6718</p>
+            </div>
+        </div>
+        <!-- Facebook -->
+        <div class="col-md-4 mb-3 text-center">
+            <div class="card p-3 shadow-sm">
+                <i class="bi bi-facebook fs-2 text-primary"></i>
+                <h6 class="mt-2">Facebook</h6>
+                <a href="https://www.facebook.com/nawngnimobati" target="_blank" class="text-decoration-none"><span style="color:black">My Account.</span> Click Here!</a>
+            </div>
+        </div>
+        <!-- Gmail -->
+        <div class="col-md-4 mb-3 text-center">
+            <div class="card p-3 shadow-sm">
+                <i class="bi bi-envelope-fill fs-2 text-danger"></i>
+                <h6 class="mt-2">Email</h6>
+                <p class="mb-0">yusonjayson07@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- Image Zoom Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel">Certificate</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+              <img id="modalImage" class="modal-img" src="" alt="Enlarged Certificate">
+          </div>
+      </div>
+  </div>
+</div>
+<script>
+  function openModal(imgElement) {
+      document.getElementById('modalImage').src = imgElement.src;
+      var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+      imageModal.show();
+  }
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
